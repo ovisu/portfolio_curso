@@ -1,0 +1,127 @@
+.experiencia-container {
+  max-width: 1400px;
+  padding: 40px 140px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 140px;
+}
+.experiencia-container h2 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+  color: #e0e0e0;
+}
+.experiencia-container p {
+  margin-top: 24px;
+  font-size: 1.5rem;
+  color: #525252;
+}
+.experiencia-container p strong {
+  color: #141414;
+}
+.experiencia {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 75px;
+  position: relative;
+}
+.experiencia-ano {
+  position: absolute;
+  font-size: 0.875rem;
+  color: #525252;
+  left: -100px;
+  top: 1px;
+  text-align: right;
+
+  width: 60px;
+}
+.experiencia-titulo {
+  font-size: 1.125rem;
+  padding-bottom: 10px;
+}
+.experiencia::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  position: absolute;
+  left: -24px;
+}
+.experiencia-cargo {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.experiencia-texto {
+  font-size: 0.875rem;
+  color: #525252;
+}
+.experiencia-habilidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #141414;
+  gap: 15px;
+}
+.experiencia-habilidades li {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  padding: 5px 10px;
+}
+@media (max-width: 1300px) {
+  .experiencia-container h2 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 1200px) {
+  .experiencia-container h2 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 1050px) {
+  .experiencia-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .experiencia-container h2 {
+    max-width: max-content;
+    margin: 0 auto;
+    /* font-size esquisito só pra manter um ponto de quebra em 800px */
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .experiencia-container {
+    gap: 20px;
+    padding: 40px 60px;
+  }
+  .experiencia {
+    grid-template-columns: 1fr;
+  }
+  .experiencia-ano {
+    left: 0;
+    top: -20px;
+    text-align: left;
+  }
+  .experiencia-texto {
+    max-width: 45ch;
+    margin-bottom: 30px;
+  }
+  .experiencia-container h2 {
+    font-size: 3rem;
+    color: #141414;
+  }
+  .experiencia-container p {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 600px) {
+  .experiencia-container {
+    padding: 20px 30px;
+  }
+}

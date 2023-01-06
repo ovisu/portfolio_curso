@@ -1,0 +1,15 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: Fira Sans;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
